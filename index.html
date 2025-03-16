@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style.css"/>
     <script src="./index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ramen-rater</title>
 </head>
 <body>
-    
+    <h3 ><b>Ramen Rater</b></h3>
+    <div id="ramen-menu"></div>
+
+
+   <!-- Display selected ramen details -->
+<div id="ramen-detail">
+    <img alt="ramen-image" src=""/>
+    <h1 id="ramen-name-display"></h1>
+    <h2 id="ramen-restaurant-display"></h2>
+</div>
+
+<p>Rating: <span id="ramen-rating-display"></span></p>
+<p>Comment: <span id="ramen-comment-display"></span></p><br>
+
+<!-- Button to start adding a new ramen -->
+<button id="create-new-ramen">Create New Ramen</button><br><br>
+
+<!-- Form to add or edit ramen -->
+<form id="ramen-form">
+    <label for="form-ramen-name">Name:</label><br>
+    <input id="form-ramen-name" type="text" list="ramen-options" placeholder="Enter ramen name"/><br><br>
+    <datalist id="ramen-options">
+       <option value="Shoyu Ramen"></option>
+       <option value="Miso Ramen"></option>
+       <option value="Tonkotsu Ramen"></option>
+    </datalist>
+
+    <label for="form-ramen-restaurant">Restaurant:</label><br>
+    <input id="form-ramen-restaurant" type="text" list="restaurant-options" placeholder="Enter restaurant name"/><br><br>
+    <datalist id="restaurant-options">
+       <option value="Ichiran"></option>
+       <option value="Menya"></option>
+       <option value="Ramen-ya"></option>
+    </datalist>
+
+    <label for="form-ramen-image">Image:</label><br>
+    <input id="form-ramen-image" type="text" placeholder="Enter image source"/><br><br>
+
+    <label for="form-ramen-rating">Rating:</label><br>
+    <input id="form-ramen-rating" type="number" min="1" max="10" list="rating-options" placeholder="Enter rating"/><br>
+    <datalist id="rating-options">
+       <option value="1"></option>
+       <option value="2"></option>
+       <option value="3"></option>
+       <option value="4"></option>
+       <option value="5"></option>
+       <option value="6"></option>
+       <option value="7"></option>
+       <option value="8"></option>
+       <option value="9"></option>
+       <option value="10"></option>
+    </datalist><br><br>
+
+    <label for="form-ramen-comment">Comment:</label><br>
+    <textarea id="form-ramen-comment" placeholder="Enter your comment"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>

@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+#ramen-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#ramen-image{
+    width: 200px;
+    height: 200px;
+}
